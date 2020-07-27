@@ -2,16 +2,15 @@
 // Написати програм који исписује дијамант са рупом за унето N: (Нема потребе проверавати улазнеподатке)
 
 let N = 5
+let w = 10
+let h = 10
+let red = ""
 
-let n = 5
-
-for(let i = 1; i <= N; i++) {
-    let red = ""
-    for(let j = 1; j <= i; j++) { 
-            red += "#"
-            if(i = 5){
-                red += ' '
+for(i = 1; i <= h; i++)
+    red = ""
+        for(j = 1; j <= w; j++)
+            if(i == 1 || i == h) {
+                if( j == 1 || j == w)
+                red += " "
             }
-    }
-    console.log(red)
-}
+        
